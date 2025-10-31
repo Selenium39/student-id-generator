@@ -1,6 +1,6 @@
 "use client"
 
-import { FileText, ExternalLink } from "lucide-react"
+import { FileText, ExternalLink, Github } from "lucide-react"
 import Link from "next/link"
 
 export default function Header() {
@@ -16,8 +16,20 @@ export default function Header() {
           </h1>
         </div>
 
-        {/* Promotional Link */}
-        <div className="flex items-center">
+        {/* Right Side Links */}
+        <div className="flex items-center gap-2">
+          {/* GitHub Link */}
+          <Link
+            href="https://github.com/Selenium39/student-id-generator"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center p-2 text-white hover:bg-white/20 rounded-md transition-colors duration-200"
+            aria-label="GitHub Repository"
+          >
+            <Github className="h-5 w-5" />
+          </Link>
+
+          {/* Promotional Link */}
           <Link
             href="https://chat-tempmail.com"
             target="_blank"
