@@ -25,6 +25,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          defer
+          src="https://umami.selenium39.me/script.js"
+          data-website-id="7a287b36-c5a5-41dd-9b39-d90d0cb70cce"
+        />
+      </head>
       <body className={`${inter.className} ${greatVibes.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />
